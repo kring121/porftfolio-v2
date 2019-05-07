@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-hero {
+  min-height: 88vh;
+  margin: 0;
+  cursor: pointer;
+}
+
+#home{
+  position: relative;
+  overflow: hidden;
+}
+
+.tooltip-inner {
+  color: black;
+}
+
+.arrow::before {
+  border-bottom-color: white !important;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-fill {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+}
+
+#about, #portfolio, #resume, #contact {
+  min-height: 100vh;
+}
+
+.space-filler {
+  height: 12vh;
+}
+
+.card {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.code-icon {
+  fill: #1a1a1a;
+}
+
+.code-icon-col {
+  height: 100px;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+}
+
+.contact-link {
+  color: #8f9aa2;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+  color: #009ad2;;
+}
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  opacity: 0;
+  transition: opacity 0.75s ease-in;
+}
+
+.portfolio-card:hover::before {
+  opacity: 1;
+  transition: opacity 0.75s ease-out;
+}
+
+.portfolio-btn, .learnmore-btn {
+  position: relative;
+  z-index: 9;
+}
+
+#devbook::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-03-04+at+7.55.56+PM.png');
+  background-size: cover;
+}
+
+#geoinfo::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-04-11+at+11.05.56+AM.png');
+  background-size: cover;
+}
+
+#job-tracker::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-04-11+at+11.57.30+AM.png');
+  background-size: cover;
+}
+
+#comet::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-01-28+at+2.27.09+PM.png');
+  background-size: cover;
+}
+
+#subway::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-01-28+at+4.06.35+PM.png');
+  background-size: cover;
+  background-position: 60%;
+}
+
+#marvel::before {
+  background: url('https://s3.amazonaws.com/project-4-bucket/Screen+Shot+2019-04-02+at+2.19.31+PM.png');
+  background-size: cover;
+}
+
+.ripple {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -30%);
+  animation: ripple 4s linear;
+}
+
+.r2 {
+  animation-delay: 0.8s;
+}
+
+.r3 {
+  animation-delay: 1.6s;
+}
+
+.r4 {
+  animation-delay: 2.4s;
+}
+
+.r5 {
+  animation-delay: 3.2s;
+}
+
+@keyframes ripple {
+  from {
+    width: 0px;
+    height: 0px;
+    border: 4px solid rgb(143,154,162);
+    background: rgba(143,154,162,0.7);
+  }
+
+  to {
+    border: 0px solid rgb(143,154,162);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 3.65rem !important;
+  }
+}
